@@ -20,10 +20,9 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 62.5%;
-    font-family: 'Poppins', sans-serif;
 	font: inherit;
 	vertical-align: baseline;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -53,6 +52,112 @@ h1, h2, h3, h4, h5, h6, button, p {
     color: white;
 }
 
+/* --- Desktop Styles ---- */
 @media all and (min-width: 1440px) {
-    
+    .container {
+		background-image: url('images/bg-intro-desktop.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Poppins', sans-serif;
+	}
+
+	.art {
+		padding: 5%;
+		width: 50%;
+	}
+
+	.desc * {
+		margin: 4% auto;
+		width:60%;
+	}
+
+	.desc {
+		padding-right: 0;
+	}
+
+	.form {
+		padding-left: 0;
+	}
+
+	.form > * {
+		width: 70%;
+		margin: auto;
+	}
+
+	.description {
+		width: 70%;
+		position: relative;
+		left: 5%;
+		line-height: 1.7rem;
+	}
+
+	.title {
+		font-size: 2.5rem;
+		font-weight: 700;
+	}
+
+	.advert {
+		background-color: hsl(248, 32%, 49%);
+		text-align: center;
+		padding: 15px;
+		border-radius: 8px;
+		margin-bottom: 20px;
+		box-shadow: 1px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	.div-advert span {
+		font-weight: bold;
+	}
+
+	form {
+		background: white;
+		border-radius: 8px;
+		padding: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		box-shadow: 1px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	form > * {
+		padding: 15px;
+		margin: 10px auto;
+		width: 90%;
+		border-radius: 6px;
+		border: 1px solid hsl(246, 25%, 77%);
+	}
+
+	button {
+		width: 97%;
+		border: none;
+		background: hsl(154, 59%, 51%);
+	}
+
+	form label {
+		display: none;
+	}
+
+	small {
+		font-size: .6rem;
+		text-align: center;
+		position: relative;
+		top: -15px;
+		border: none;
+	}
+
+	small a {
+		color: hsl(0, 100%, 74%);
+		text-decoration: none;
+	}
+}
+
+/* --- Mobile Styles ---  */
+@media all and (min-width: 375px) {
+	
 }
